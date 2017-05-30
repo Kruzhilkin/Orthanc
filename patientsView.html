@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Patients</title>		
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link type="text/css" href="css/themename/jquery-ui.min.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="main">
+		<div class="Patients">
+			<p>Пациенты из 192.168.1.3</p>
+			<?php foreach ($this->arrayPatients as $value): ?>
+					<li>
+						<div>
+							<a href="index.php?uid=<?php echo $value -> patientsMyOrthanc['ID']; ?>" class="patientView" >
+								<?php echo $value->patientsMyOrthanc['MainDicomTags']['PatientName']; ?> 
+								<?php echo $this->seriesURLarr['seriesURL']; ?> 
+							</a>
+						</div>
+					</li>
+			<?php endforeach; ?>
+		</div>
+			
+	
+		
+	</div>
+
+			<div id="draggable">
+			  	<p>Перетаскиваемый</p>
+			</div>
+	<script>
+		$("#draggable").draggable();
+	</script>					
+</body>
+</html>

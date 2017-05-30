@@ -1,0 +1,70 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: 100%/2em Arial, Helvetica, sans-serif;	
+	/*background-image: url(img/background.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+*/
+}
+
+
+#main{
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto; 
+}
+
+.Patients{
+	display: block;
+    background: rgba(0, 170, 238, 0.9); /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 3%; 
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+p{
+	font-size: 150%;
+}
+
+a{
+	text-decoration: none; /*ссылка без подчеркивания */
+}
+
+li{
+	list-style-type: none; /*список без точек*/
+}
+
+
+/*patientsView.php*/
+.patientView {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 1em;
+  outline: none;
+  transition: 0.2s;
+} 
+.patientView:hover { background: rgba(255,255,255,.2); }
+.patientView:active { background: white; }
+
+
+/*patientsMore.php*/
+.ui-autocomplete-input{
+	height: 27px;
+		font-size: 20px;
+}

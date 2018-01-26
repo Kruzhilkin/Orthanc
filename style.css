@@ -1,6 +1,6 @@
 ﻿*{
 	margin: 0;
-	padding: 0;
+/*	padding: 0;*/
 }
 body{
 	font: 100%/2em Arial, Helvetica, sans-serif;	
@@ -16,7 +16,7 @@ body{
 #main{
 	width: 100%;
     height: 100%;
-    position: fixed;
+
     top: 0;
     left: 0;
     display: flex;
@@ -36,19 +36,25 @@ body{
 
 
 p{
-	font-size: 150%;
+	font-size: 100%;
 }
 
 a{
 	text-decoration: none; /*ссылка без подчеркивания */
 }
-
-li{
-	list-style-type: none; /*список без точек*/
+ol{
+  padding: auto;
 }
 
 
-/*patientsView.php*/
+fieldset{
+  /*width: 50%;*/  
+  margin: 1%;
+  padding: 1%;
+  display: inline-block;
+}
+
+
 .patientView {
   display: inline-block;
   color: white;
@@ -59,12 +65,46 @@ li{
   outline: none;
   transition: 0.2s;
 } 
-.patientView:hover { background: rgba(255,255,255,.2); }
-.patientView:active { background: white; }
 
 
-/*patientsMore.php*/
+
 .ui-autocomplete-input{
+  margin-top: 3%;
 	height: 27px;
-		font-size: 20px;
+	font-size: 20px;
 }
+
+
+.connected{
+        background-color: rgb(214,86,43);
+       width: 100%;
+}    
+
+.border {
+
+
+}
+.border li {
+font-family: "Trebuchet MS", "Lucida Sans";
+padding: 7px 20px;
+margin-bottom: 10px;
+border-radius: 5px;
+border-left: 10px solid #f05d22; 
+box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+     -2px -2px 5px 0 rgba(0,0,0,.1),
+    2px 2px 5px 0 rgba(0,0,0,.1),
+    -2px 2px 5px 0 rgba(0,0,0,.1);
+font-size: 15px;
+letter-spacing: 2px;
+transition: 0.3s all linear;
+}
+.border li:nth-child(2){border-color: #8bc63e;}
+.border li:nth-child(3){border-color: #fcba30;}
+.border li:nth-child(4){border-color: #1ccfc9;}
+.border li:nth-child(5){border-color: #493224;}
+.border li:hover {border-left: 10px solid transparent;}
+.border li:nth-child(1):hover {border-right: 10px solid #f05d22;}
+.border li:nth-child(2):hover {border-right: 10px solid #8bc63e;}
+.border li:nth-child(3):hover {border-right: 10px solid #fcba30;}
+.border li:nth-child(4):hover {border-right: 10px solid #1ccfc9;}
+.border li:nth-child(5):hover {border-right: 10px solid #493224;} 
